@@ -1,16 +1,98 @@
-# flutter_application_1
 
-A new Flutter project.
+````markdown
+# FitPro 🏋️‍♂️
 
-## Getting Started
+FitPro is a modern fitness tracking application built using Flutter for the frontend and a robust Node.js + Express backend with MongoDB as the database. The app helps users track their workouts, progress, and fitness goals seamlessly.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🔹 Frontend
+- **Flutter**  
+  A cross-platform mobile framework to deliver native-like performance and smooth UI/UX.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🔹 Backend
+- **Node.js**  
+  JavaScript runtime built on Chrome’s V8 engine.
+
+- **Express.js**  
+  Lightweight and fast web framework for Node.js.
+
+- **MongoDB**  
+  NoSQL database for storing user data, workout plans, goals, and progress.
+
+---
+
+## 📁 Project Structure
+
+```bash
+FitPro/
+├── backend/               # Node.js + Express backend
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── .env
+│   ├── app.js
+│   └── server.js
+├── flutter_frontend/      # Flutter application code
+│   ├── lib/
+│   ├── assets/
+│   └── pubspec.yaml
+└── README.md
+````
+
+---
+
+## 🚀 Features
+
+* 🧍 User registration and authentication
+* 📊 Track workouts, diet, and fitness goals
+* 🕐 Daily/weekly fitness stats
+* 🔐 Secure API endpoints with JWT
+* ☁️ MongoDB integration for persistent storage
+* 📱 Flutter UI with responsive and intuitive design
+
+---
+
+## 🔧 Installation
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Set up your `.env` file with:
+
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
+
+### Frontend (Flutter)
+
+```bash
+cd flutter_frontend
+flutter pub get
+flutter run
+```
+
+---
+
+## 🌐 API Endpoints
+
+| Method | Endpoint           | Description         |
+| ------ | ------------------ | ------------------- |
+| POST   | /api/auth/register | Register a new user |
+| POST   | /api/auth/login    | Login user          |
+| GET    | /api/user/profile  | Get user profile    |
+| POST   | /api/workouts/add  | Add workout entry   |
+| GET    | /api/workouts      | Fetch workout data  |
+
+---
+
+
